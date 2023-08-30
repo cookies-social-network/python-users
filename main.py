@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 
-app = FastAPI(
+users_app = FastAPI(
     title='python-users',
 )
 
 
-@app.get('/')
+@users_app.get('/')
 async def root():
 
     return {'message': 'Hello, python-users'}
